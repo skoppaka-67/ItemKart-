@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form  action="/category" method="get">
+
+        <select name="category_list">
+              {% for item in li %}
+                <option  value="{{ item }}">{{ item }}</option>
+
+             {% endfor %}
+        </select>
+        <input type="hidden" id="limit" name="limit" value="10" required><br><br>
+        <input type="hidden" id="offset" name="offset" value="10" required><br><br>
+
+
+      <br>
+      <input type="submit">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  "{{ get_flashed_messages()[0]  }}"
+    <form action="{{ url_for('add_to_cart') }}" method = "POST">
+      <label for="Item_name">Item_name:&nbsp;&nbsp;</label>
+      <input type="text" id="Item_name" name="Item_name" required><br><br>
+          <input type="submit" value="Add to cart">
+
+
+        <button onclick="location.href = '/show_cart';" id="myButton" class="float-left submit-button" >Show Cart</button>
+         <br><br><a href = '/logout'>click here to logout </a>
+    </form>
+
+</body>
+</html>
